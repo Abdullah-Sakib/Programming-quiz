@@ -1,10 +1,13 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Home from './Components/Home/Home';
 import Root from './Layout/Root';
 
 function App() {
   const router = createBrowserRouter([
-    {path:'/', element: <Root></Root>}
+    {path:'/', element: <Root></Root>, children:[
+      {path:'/', element:<Home></Home>}
+    ]}
   ])
   return (
     <div className="App">
