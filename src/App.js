@@ -6,7 +6,7 @@ import Root from './Layout/Root';
 function App() {
   const router = createBrowserRouter([
     {path:'/', element: <Root></Root>, children:[
-      {path:'/', element:<Home></Home>}
+      {path:'/', element:<Home></Home>, loader:async()=> fetch(' https://openapi.programming-hero.com/api/quiz')},
     ]}
   ])
   return (
