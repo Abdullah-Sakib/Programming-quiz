@@ -17,7 +17,7 @@ const Topic = ({ topic }) => {
             <p className="mt-3 font-semibold">Total Quiz : {total}</p>
           </div>
           <Link to={`/quiz/${id}`}>
-            <button className="px-4 rounded text-white font-semibold py-2 bg-blue-500 hover:bg-blue-700">
+            <button className="px-4 rounded text-white font-semibold py-2 bg-blue-500 hover:bg-blue-700" onClick={window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}>
             Start Quiz  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
             </button>
           </Link>
