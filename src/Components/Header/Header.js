@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,7 +7,7 @@ const Header = () => {
     <div className="bg-gray-900">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
-          <NavLink
+          <Link
             to="/"
             aria-label="Company"
             title="Company"
@@ -16,7 +16,7 @@ const Header = () => {
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
               Programming Quiz
             </span>
-          </NavLink>
+          </Link>
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
@@ -46,16 +46,6 @@ const Header = () => {
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
               >
                 Blogs
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/"
-                aria-label="About us"
-                title="About us"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
-              >
-                About us
               </NavLink>
             </li>
           </ul>
@@ -125,7 +115,7 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/"
+                          to="/chart"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                         >
                           Chart
@@ -133,18 +123,10 @@ const Header = () => {
                       </li>
                       <li>
                         <NavLink
-                          to="/"
+                          to="/blog"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                         >
                           Blogs
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink
-                          to="/"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
-                        >
-                          About us
                         </NavLink>
                       </li>
                     </ul>
