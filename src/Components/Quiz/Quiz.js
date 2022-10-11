@@ -8,7 +8,7 @@ const Quiz = () => {
   return (
     <div>
       <div className="flex justify-center items-center py-5">
-        <img src={logo} className="w-12 mr-3 bg-black rounded-[50%]" alt="" />
+        <img src={logo} className="w-12 mr-3 bg-black rounded-xl " alt="" />
         <h2 className="text-3xl font-semibold  text-black">
           {name} Quiz
         </h2>

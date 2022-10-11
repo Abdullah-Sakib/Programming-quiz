@@ -82,9 +82,9 @@ const Header = () => {
               </svg>
             </button>
             {isMenuOpen && (
-              <div className="absolute top-0 left-0 w-full">
+              <div className="absolute top-0 right-0 w-full">
                 <div className="p-5 bg-white border rounded shadow-sm">
-                  <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center justify-between mb-4 ">
                     <div>
                       <NavLink
                         to="/"
@@ -113,14 +113,12 @@ const Header = () => {
                       </button>
                     </div>
                   </div>
-                  <nav>
+                  <nav className="text-white">
                     <ul className="space-y-4">
                       <li>
                         <NavLink
-                          to="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
+                          to="/"               
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400 "
                         >
                           Home
                         </NavLink>
@@ -128,8 +126,6 @@ const Header = () => {
                       <li>
                         <NavLink
                           to="/"
-                          aria-label="Our product"
-                          title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                         >
                           Chart
@@ -138,8 +134,6 @@ const Header = () => {
                       <li>
                         <NavLink
                           to="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                         >
                           Blogs
@@ -148,8 +142,6 @@ const Header = () => {
                       <li>
                         <NavLink
                           to="/"
-                          aria-label="About us"
-                          title="About us"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-yellow-400"
                         >
                           About us
