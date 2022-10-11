@@ -13,8 +13,8 @@ import {
 const Chart = () => {
   const data = useLoaderData();
   return (
-    <div>
-      <div className="w-11/12 md:w-2/4 h-96 mx-auto mt-36">
+    <div className="bg-yellow-50 h-[100vh] pt-36">
+      <div className="w-11/12 md:w-2/4 h-96 mx-auto ">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart width={300} height={100} data={data.data}>
             <XAxis dataKey="name" />

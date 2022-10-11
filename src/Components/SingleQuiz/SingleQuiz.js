@@ -16,10 +16,10 @@ const SingleQuiz = ({ question }) => {
     swal("Correct Answer is", `${correctAnswer}`);
   };
   return (
-    <div className="border-2 rounded-lg w-2/3 mx-auto my-9 p-8 bg-blue-300">
+    <div className="border-2 rounded-lg w-2/3 mx-auto my-9 p-8 bg-yellow-300">
       <div className="flex flex-col md:flex-row">
           <h3 className="text-lg md:text-xl md:grow">{question.question}</h3>
-        <button className="hover:text-yellow-500" onClick={showCorrectAnswer}>
+        <button className="hover:text-gray-900" onClick={showCorrectAnswer}>
           <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
         </button>
       </div>
