@@ -23,7 +23,7 @@ const SingleQuiz = ({ question }) => {
     swal("Correct Answer is", `${correctAnswer}`);
   };
   return (
-    <div className="border-2 rounded-lg w-11/12 md:w-2/3 mx-auto my-9 p-8 bg-yellow-300">
+    <div className="border-2 rounded-lg w-11/12 md:w-2/3 mx-auto my-9 p-8 bg-yellow-300 shadow-xl">
       <div className="flex flex-col md:flex-row">
           <h3 className="text-lg md:text-xl md:grow">{question.question.replace(/(<([^>]+)>)/ig, '')}</h3>
         <button className="hover:text-gray-900" onClick={showCorrectAnswer}>
