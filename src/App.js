@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import './App.css';
 import Blog from './Components/Blog/Blog';
+import Chart from './Components/Chart/Chart';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
 import Quiz from './Components/Quiz/Quiz';
@@ -12,6 +13,7 @@ function App() {
     {path:'/', element: <Root></Root>, children:[
       {path:'/', element:<Home></Home>, loader:async()=> fetch(' https://openapi.programming-hero.com/api/quiz')},
       {path:'blog', element:<Blog></Blog>},
+      {path:'chart', element:<Chart></Chart>, loader:async()=> fetch('https://openapi.programming-hero.com/api/quiz')},
       {path:'quiz/:id', loader: async({params}) => fetch(` https://openapi.programming-hero.com/api/quiz/${params.id}`) ,element: <Quiz></Quiz>}
     ]},
     {path:'*', element:<ErrorPage></ErrorPage>}

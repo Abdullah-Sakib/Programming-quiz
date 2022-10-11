@@ -30,7 +30,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/"
+                to="/chart"
                 aria-label="Our product"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
