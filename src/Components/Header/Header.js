@@ -20,10 +20,12 @@ const Header = () => {
           <ul className="items-center hidden space-x-8 lg:flex">
             <li>
               <NavLink
-                to="/"
+                to="/home"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                className={({ isActive }) =>
+                isActive ? `font-semibold ${'text-yellow-400'}` : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                }
               >
                 Home
               </NavLink>
@@ -33,7 +35,9 @@ const Header = () => {
                 to="/chart"
                 aria-label="Our product"
                 title="Our product"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                className={({ isActive }) =>
+                isActive ? `font-semibold ${'text-yellow-400'}` : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                }
               >
                 Chart
               </NavLink>
@@ -43,7 +47,9 @@ const Header = () => {
                 to="/blog"
                 aria-label="Product pricing"
                 title="Product pricing"
-                className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                className={({ isActive }) =>
+                isActive ? `font-semibold ${'text-yellow-400'}` : "font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-yellow-400"
+                }
               >
                 Blogs
               </NavLink>

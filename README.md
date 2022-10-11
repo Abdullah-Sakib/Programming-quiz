@@ -14,4 +14,4 @@ https://thriving-stardust-a28e7a.netlify.app
 - Instant result in every quiz.
 - Responsive for Mobile and Desktop.
 - A chart of total quiz.
-
+- Show total correct answer and wrong attemps.
