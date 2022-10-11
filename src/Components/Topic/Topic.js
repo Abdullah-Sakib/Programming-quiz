@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
+
 const Topic = ({ topic }) => {
   const { id, name, logo, total } = topic;
   return (
